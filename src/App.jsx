@@ -155,13 +155,13 @@ function Hero({ onRsvpClick }) {
       <HStrip pos="top" />
       <HStrip pos="bottom" />
 
-      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "90px 32px" }}>
+      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "15px 32px 40px" }}>
         <FadeIn delay={100}>
           <div
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginBottom: 28,
+                marginBottom: 10,
               }}
             >
               <img
