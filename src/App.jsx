@@ -3,7 +3,7 @@
 // ============================================================
 import { useState, useRef, useId, useEffect } from "react";
 import mainWeddingImage from "./assets/mainphoto.jpeg"; 
-import cardPhoto from "./assets/cardPhoto.jpeg"
+import cardPhoto from "./assets/cardphoto.jpeg"
 import {VenueMapButton } from "./components/invitationExtras.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
