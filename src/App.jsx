@@ -169,7 +169,7 @@ function Hero({ onRsvpClick }) {
                 alt="Family"
                 style={{
                   width: "100%",
-                  maxWidth: "220px",
+                  maxWidth: "120px",
                   height: "auto",
                   display: "block",
                 }}
