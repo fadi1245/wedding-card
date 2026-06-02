@@ -3,7 +3,8 @@
 // ============================================================
 import { useState, useRef, useId, useEffect } from "react";
 import mainWeddingImage from "./assets/mainphoto.jpeg"; 
-import cardPhoto from "./assets/cardphoto.jpeg"
+import cardPhoto from "./assets/cardphoto.jpeg";
+import greetingphoto from "./assets/caligra3.png"
 import {VenueMapButton } from "./components/invitationExtras.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -156,8 +157,25 @@ function Hero({ onRsvpClick }) {
 
       <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "90px 32px" }}>
         <FadeIn delay={100}>
-          <p style={{ color: C.lblue, letterSpacing: "0.35em", fontSize: "0.7rem", textTransform: "uppercase", marginBottom: 28, fontFamily: "'Cinzel', serif" }}>Together with their families</p>
-        </FadeIn>
+          <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginBottom: 28,
+              }}
+            >
+              <img
+                src={greetingphoto}
+                alt="Family"
+                style={{
+                  width: "100%",
+                  maxWidth: "220px",
+                  height: "auto",
+                  display: "block",
+                }}
+              />
+            </div>       
+             </FadeIn>
 
         <FadeIn delay={200}>
           <p style={{ color: C.blue, fontSize: "0.88rem", lineHeight: 1.75, marginBottom: 18, fontStyle: "italic", fontFamily: "'EB Garamond', serif" }}>
