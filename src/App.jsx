@@ -22,6 +22,7 @@ const WEDDING = {
   fullDate: "Saturday, July 11, 2026", hijriDate: "26 Muharram 1448",
   event: "Venue", venue: "Mass Auditorium", address: "Thrikkavu, Ponnani",
   sharingFamilies: "CP Family & Kadugothel Family", year: "2026",
+  lunchtime: "11:30 am - 2:00 pm"
 };
 
 const C = { cream: "#f7f3ea", cream2: "#ede7d5", navy: "#1a3260", blue: "#2d4a7a", lblue: "#4a6a9a", border: "#b8c8e0", green: "#4a7a5a" };
@@ -296,7 +297,7 @@ function Details() {
           {[
             { icon: "📅", label: "Date", value: WEDDING.fullDate, sub: WEDDING.hijriDate },
             { icon: "🏛️", label: WEDDING.event, value: WEDDING.venue, sub: WEDDING.address },
-            { icon: "🌿", label: "Sharing Happiness", value: WEDDING.sharingFamilies },
+            { icon: "🍽️", label: "Lunch", value: WEDDING.lunchtime },
           ].map((item, i) => (
             <ScrollReveal key={item.label} delay={i * 0.15} direction="up">
               <div className="detail-card" style={{ border: `1px solid ${C.border}`, padding: "40px 24px", background: "rgba(255,255,255,0.5)", textAlign: "center", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", transition: "all 0.4s ease" }}>
